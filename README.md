@@ -37,3 +37,9 @@ Sur le PC — Réception et traitement IA
 
 Crée un fichier obstacle_simple.py
 lancer obstacle_simple.py
+
+résultat:
+<img width="1451" height="1091" alt="Capture d'écran 2025-10-28 163614" src="https://github.com/user-attachments/assets/a9e77bf0-5f01-4b2a-97fd-ebc2c7a40e20" />
+<img width="1368" height="1113" alt="Capture d'écran 2025-10-28 163652" src="https://github.com/user-attachments/assets/4393ffc7-d95a-4c0a-b961-0075d14f52a6" />
+
+
