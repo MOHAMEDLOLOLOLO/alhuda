@@ -1,0 +1,39 @@
+################################################################################
+# 🧠 PARTIE PC — Traitement IA + Réception du flux UDP
+################################################################################
+# Cette partie s'installe sur le PC qui exécute la détection d'obstacles.
+# Elle comprend PyTorch, OpenCV (avec FFmpeg), et les outils de visualisation.
+
+# --- IA et Deep Learning ---
+torch>=2.0.0
+torchvision>=0.15.0
+torchaudio>=2.0.0
+
+# --- Traitement vidéo et flux réseau ---
+opencv-contrib-python==4.6.0.66   # version stable avec support FFmpeg sur Windows
+numpy>=1.24.0
+Pillow>=9.5.0
+ffmpeg-python>=0.2.0              # wrapper Python pour ffmpeg (optionnel)
+
+# --- Outils utiles ---
+matplotlib>=3.7.0
+tqdm>=4.65.0
+
+# --- (Optionnel) si tu recompiles OpenCV avec GStreamer ---
+# gst-python
+
+
+################################################################################
+# 📷 PARTIE RASPBERRY PI — Capture et diffusion vidéo
+################################################################################
+# Cette partie s'installe sur le Raspberry Pi qui capture la vidéo
+# et la diffuse en UDP avec rpicam-vid.
+
+# --- Outils caméra et vidéo (inclus dans Raspberry Pi OS) ---
+# libcamera (déjà préinstallé sur Raspberry Pi OS Bookworm)
+# rpicam-apps (pour rpicam-vid, rpicam-still, etc.)
+
+# --- Dépendances Python légères pour scripts côté Pi (optionnelles) ---
+numpy>=1.24.0
+opencv-python-headless>=4.6.0.66  # si besoin de scripts sans interface graphique
+psutil>=5.9.0                     # pour monitoring CPU/RAM (optionnel)
