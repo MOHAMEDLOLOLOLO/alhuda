@@ -36,3 +36,4 @@ rpicam-vid -t 0 \
 Sur le PC — Réception et traitement IA
 
 Crée un fichier obstacle_simple.py
+lancer obstacle_simple.py
