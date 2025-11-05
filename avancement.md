@@ -118,7 +118,8 @@ changement de datasets
 ├── garbage/
 
 └── tree/
-Type de classe	                                             	   Quantité
+
+Type de classe	                                                                                        	   Quantité
 
 Fréquente (ex : person, vehicle, sidewalk)	souvent visibles	2000–4000 images
 
