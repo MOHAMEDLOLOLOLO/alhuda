@@ -24,6 +24,7 @@ grâce à une caméra embarquée et un traitement IA déporté sur PC.
   Raspberry → UDP → PC → MobileNetV3 → Affichage + Détection
 
 tester:
+//editer la connection plus avec wpa.coonf mais avec sudo nmtui
 
 Sur le Raspberry Pi — Émission du flux vidéo
 
