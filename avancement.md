@@ -118,6 +118,17 @@ changement de datasets
 ├── garbage/
 
 └── tree/
+names:
+  - person      # 0
+  - vehicle     # 1
+  - stairs      # 2
+  - crosswalk   # 3
+  - sidewalk    # 4
+  - pothole     # 5
+  - ramp        # 6
+  - obstacle    # 7
+  - garbage     # 8
+  - tree        # 9
 
 Type de classe	                                                                                        	   Quantité
 
