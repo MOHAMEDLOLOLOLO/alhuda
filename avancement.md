@@ -97,3 +97,19 @@ L’objectif est d’affiner les annotations pour constituer un dataset beaucoup
 
 <img width="2118" height="1123" alt="image" src="https://github.com/user-attachments/assets/991b5cfc-d4d7-43e1-ad94-0b0000a7fb1a" />
 
+
+changement de datasets 
+├── person/
+├── vehicle/
+├── stairs/
+├── crosswalk/
+├── sidewalk/
+├── pothole/
+├── ramp/
+├── obstacle/
+├── garbage/
+└── tree/
+Type de classe	                                             	   Quantité
+Fréquente (ex : person, vehicle, sidewalk)	souvent visibles	2000–4000 images
+Moyenne (ex : stairs, crosswalk, obstacle)	parfois visibles	1000–2000 images
+Rare / Spécifique (ex : pothole, ramp, garbage)	peu présentes	700–1500 images
