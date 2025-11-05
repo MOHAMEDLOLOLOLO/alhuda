@@ -82,3 +82,18 @@ Sinon :
 
 
 code dans obstacle_yolov8_centre.py
+
+entrainement avec ce datasets https://universe.roboflow.com/tfg-7qtpm/accesibility-street/dataset/11/images
+
+J’ai effectué de nombreuses recherches de datasets en ligne et entraîné plusieurs modèles.
+Cependant, les résultats, bien que fonctionnels, manquaient souvent de précision.
+J’ai constaté que le problème venait principalement des labels : les annotations des images n’étaient pas toujours adaptées à mon cas d’usage.
+
+À partir de ce constat, j’ai eu l’idée de développer un outil de relabellisation d’images.
+Cet outil permet d’afficher une image et son ancien label, puis de sélectionner un nouveau label parmi une liste de catégories adaptées à mon projet.
+Une fois la sélection faite, le programme met automatiquement à jour le fichier de labels associé à l’image.
+
+L’objectif est d’affiner les annotations pour constituer un dataset beaucoup plus pertinent, afin d’entraîner un modèle mieux adapté à la détection d’obstacles et d’éléments utiles à la navigation pour les personnes aveugles.
+
+<img width="2118" height="1123" alt="image" src="https://github.com/user-attachments/assets/991b5cfc-d4d7-43e1-ad94-0b0000a7fb1a" />
+
