@@ -137,4 +137,32 @@ Fréquente (ex : person, vehicle, sidewalk)	souvent visibles	2000–4000 images
 Moyenne (ex : stairs, crosswalk, obstacle)	parfois visibles	1000–2000 images
 
 Rare / Spécifique (ex : pothole, ramp, garbage)	peu présentes	700–1500 images
+Retour sur les résultats
 
+Le modèle est capable de détecter les obstacles, mais il peut encore confondre certaines classes.
+De plus, la latence dépend fortement de l’état de la connexion : dans certaines zones, une connexion faible empêche l’envoi rapide des données, ce qui dégrade les performances en temps réel.
+
+Solutions envisagées
+
+La logique du système va être revue. Le modèle sera découpé en deux étapes :
+
+Modèle 1 : détection simple des obstacles et des humains
+
+Modèle 2 : classification fine du type d’obstacle (escaliers, passages piétons, etc.)
+
+Cette approche permet de réduire fortement la puissance de calcul nécessaire, car seule une partie des images sera analysée en détail.
+
+Le Modèle 1 sera volontairement léger et simplifié : tout objet situé sur la trajectoire sera considéré comme un obstacle.
+La détection des humains est plus complexe car ils sont mobiles. Pour cela, un tracking (SORT ou ByteTrack) sera utilisé, combiné à un filtre de Kalman afin d’estimer leur trajectoire et déterminer s’ils peuvent entraver le déplacement de l’utilisateur.
+
+La logique globale du système sera la suivante :
+
+Camera frame
+   ↓
+Modèle 1 (détection obstacle + humain)
+   ↓
+Tracker (SORT / ByteTrack)
+   ↓
+Distance (LiDAR)
+   ↓
+Logique de décision (alerte / pas d’alerte)
