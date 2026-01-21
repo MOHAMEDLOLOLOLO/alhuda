@@ -166,3 +166,8 @@ Tracker (SORT / ByteTrack)
 Distance (LiDAR)
    ↓
 Logique de décision (alerte / pas d’alerte)
+
+
+
+dans C:\Users\bekhtaoui\Desktop\cours\nosql\projet\lunettes\alhuda\model1V2
+test avec: python video_tuner.py
