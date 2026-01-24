@@ -169,5 +169,5 @@ Logique de décision (alerte / pas d’alerte)
 
 
 
-dans C:\Users\bekhtaoui\Desktop\cours\nosql\projet\lunettes\alhuda\model1V2
+dans C:\Users\bekhtaoui\tools
 test avec: python video_tuner.py
