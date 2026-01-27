@@ -374,12 +374,14 @@ Grâce à ces identifiants persistants, il devient possible de raisonner sur l�
 
 ByteTrack est intégré via l’API Ultralytics de YOLO à l’aide de l’appel suivant :
 
-```python
-model.track(
-    frame,
-    tracker="bytetrack.yaml",
-    persist=True
-)
+      ```python
+      model.track(
+          frame,
+          tracker="bytetrack.yaml",
+          persist=True
+      )
+
+
 Lorsque le tracking est activé :
 
 chaque boîte englobante retournée par YOLO contient un champ id,
