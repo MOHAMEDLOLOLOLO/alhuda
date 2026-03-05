@@ -170,4 +170,10 @@ Logique de décision (alerte / pas d’alerte)
 
 
 dans C:\Users\bekhtaoui\tools
-test avec: python video_tuner.py
+test avec: python video_tunerv2.py
+
+suite : entraînez en YOLOv8m maintenant pour avoir le meilleur modèle de référence, puis au moment du déploiement vous faites :
+YOLOv8m (PyTorch) 
+    → distillation vers YOLOv8n 
+        → export TFLite INT8 
+            → compilation Edge TPU
