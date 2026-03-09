@@ -177,3 +177,7 @@ YOLOv8m (PyTorch)
     → distillation vers YOLOv8n 
         → export TFLite INT8 
             → compilation Edge TPU
+
+1 ajout d'images dans E:\IA\final_dataset_save\final_dataset 
+avec merge_one.py pour deplacer depuis les dataset jusqu'au final avec les bons labels 
+verification avec count_all.py
