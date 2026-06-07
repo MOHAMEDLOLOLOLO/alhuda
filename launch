@@ -1,0 +1,3 @@
+sudo ntfsfix /dev/sda3
+sudo mkdir -p /mnt/t7
+sudo mount -t ntfs-3g /dev/sda3 /mnt/t7
